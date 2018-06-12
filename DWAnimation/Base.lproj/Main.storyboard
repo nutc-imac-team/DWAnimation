@@ -1,24 +1,192 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QBh-BR-gPA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="DWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MainView" customModule="DWAnimation" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fom-iS-xuW">
+                                <rect key="frame" x="128" y="277.5" width="118" height="30"/>
+                                <state key="normal" title="normal animation"/>
+                                <connections>
+                                    <segue destination="hxP-pS-0aa" kind="show" id="Nvy-F5-eOF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWC-NE-9ME">
+                                <rect key="frame" x="158" y="423.5" width="58" height="30"/>
+                                <state key="normal" title="example"/>
+                                <connections>
+                                    <segue destination="Kut-qV-s2V" kind="show" id="5WW-Jz-Vmv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkZ-r3-I0X">
+                                <rect key="frame" x="129" y="350.5" width="117" height="30"/>
+                                <state key="normal" title="infinity animation"/>
+                                <connections>
+                                    <segue destination="bqF-mp-jIG" kind="show" id="LTL-7p-zhc"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SWC-NE-9ME" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.2" id="BIi-N3-6Re"/>
+                            <constraint firstItem="Fom-iS-xuW" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="Vi7-yo-h6x"/>
+                            <constraint firstItem="SWC-NE-9ME" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZIm-HB-dha"/>
+                            <constraint firstItem="Fom-iS-xuW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fcj-wd-UWy"/>
+                            <constraint firstItem="fkZ-r3-I0X" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oqJ-Ef-umG"/>
+                            <constraint firstItem="fkZ-r3-I0X" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="qTy-Ui-2NX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="x9O-7D-QPw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1256.8" y="86.806596701649184"/>
+        </scene>
+        <!--NormalVC-->
+        <scene sceneID="3Ae-Je-1jV">
+            <objects>
+                <viewController id="hxP-pS-0aa" customClass="NormalVC" customModule="DWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6YV-zu-eYz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNE-04-DMf">
+                                <rect key="frame" x="162" y="533.5" width="50" height="30"/>
+                                <state key="normal" title="pulsing"/>
+                                <connections>
+                                    <action selector="pulsingAction:" destination="hxP-pS-0aa" eventType="touchUpInside" id="fNL-Me-DFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCN-fl-JEf">
+                                <rect key="frame" x="143.5" y="570" width="87" height="30"/>
+                                <state key="normal" title="circlePulsing"/>
+                                <connections>
+                                    <action selector="circlePulsingAction:" destination="hxP-pS-0aa" eventType="touchUpInside" id="ZoI-FL-idH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lNE-04-DMf" firstAttribute="centerX" secondItem="JkM-W0-FFc" secondAttribute="centerX" id="9Rz-5T-YG6"/>
+                            <constraint firstItem="hCN-fl-JEf" firstAttribute="centerX" secondItem="JkM-W0-FFc" secondAttribute="centerX" id="SNA-WI-xrF"/>
+                            <constraint firstItem="lNE-04-DMf" firstAttribute="centerY" secondItem="JkM-W0-FFc" secondAttribute="centerY" multiplier="1.5" id="khr-T7-lg2"/>
+                            <constraint firstItem="hCN-fl-JEf" firstAttribute="centerY" secondItem="JkM-W0-FFc" secondAttribute="centerY" multiplier="1.6" id="oF0-qT-iy8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JkM-W0-FFc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4s-f5-LBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="-643"/>
+        </scene>
+        <!--InfinityVC-->
+        <scene sceneID="F3x-T6-c4D">
+            <objects>
+                <viewController id="bqF-mp-jIG" customClass="InfinityVC" customModule="DWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KfV-D1-lFr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8CT-qe-R8l">
+                                <rect key="frame" x="170" y="533.5" width="34" height="30"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startAction:" destination="bqF-mp-jIG" eventType="touchUpInside" id="1CP-JG-W4x"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qOo-Gh-Ogl">
+                                <rect key="frame" x="171.5" y="570" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopAction:" destination="bqF-mp-jIG" eventType="touchUpInside" id="NAK-BI-eZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8CT-qe-R8l" firstAttribute="centerX" secondItem="LYs-YB-C3R" secondAttribute="centerX" id="NSI-o4-9e5"/>
+                            <constraint firstItem="qOo-Gh-Ogl" firstAttribute="centerX" secondItem="LYs-YB-C3R" secondAttribute="centerX" id="bma-rD-t1D"/>
+                            <constraint firstItem="qOo-Gh-Ogl" firstAttribute="centerY" secondItem="LYs-YB-C3R" secondAttribute="centerY" multiplier="1.6" id="jR0-XC-JDc"/>
+                            <constraint firstItem="8CT-qe-R8l" firstAttribute="centerY" secondItem="LYs-YB-C3R" secondAttribute="centerY" multiplier="1.5" id="kUa-PR-6Zz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LYs-YB-C3R"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="73k-f7-KFl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048.8000000000002" y="86.806596701649184"/>
+        </scene>
+        <!--ExampleVC-->
+        <scene sceneID="zli-Xr-0qw">
+            <objects>
+                <viewController id="Kut-qV-s2V" customClass="ExampleVC" customModule="DWAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="El4-cO-249" customClass="ExampleView" customModule="DWAnimation" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluetooth" translatesAutoresizingMaskIntoConstraints="NO" id="9SB-WZ-x65">
+                                <rect key="frame" x="167.5" y="345.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9SB-WZ-x65" secondAttribute="height" multiplier="1:1" id="p1d-rs-3dt"/>
+                                    <constraint firstAttribute="width" constant="40" id="sEb-fq-fRj"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.14117647058823529" green="0.57647058823529407" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9SB-WZ-x65" firstAttribute="centerY" secondItem="PGc-lu-SVm" secondAttribute="centerY" id="1x4-XN-IBA"/>
+                            <constraint firstItem="9SB-WZ-x65" firstAttribute="centerX" secondItem="PGc-lu-SVm" secondAttribute="centerX" id="rrp-Es-TFH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PGc-lu-SVm"/>
+                        <connections>
+                            <outlet property="imageView" destination="9SB-WZ-x65" id="5un-At-Sed"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="exampleView" destination="El4-cO-249" id="aCV-yt-GmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8GB-oe-vL6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2049" y="852"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6TP-aD-7k3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QBh-BR-gPA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7ZD-KX-LKl">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Qdq-iC-3p9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5S3-qt-fZA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="317.60000000000002" y="86.806596701649184"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bluetooth" width="51" height="90"/>
+    </resources>
 </document>

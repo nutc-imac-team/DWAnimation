@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F5062D9E20D0F4C40095BB18 /* CirclePulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5062D9D20D0F4C40095BB18 /* CirclePulsing.swift */; };
+		F5062DA020D0F5180095BB18 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5062D9F20D0F5180095BB18 /* Pulsing.swift */; };
 		F54A274820CE7FA700B15F53 /* NormalVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A274720CE7FA700B15F53 /* NormalVC.swift */; };
 		F54A274A20CE841C00B15F53 /* InfinityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A274920CE841C00B15F53 /* InfinityVC.swift */; };
 		F54A274C20CE844A00B15F53 /* ExampleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54A274B20CE844A00B15F53 /* ExampleVC.swift */; };
@@ -17,11 +19,11 @@
 		F5FD9BD620C5233C005CDE48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5FD9BD420C5233C005CDE48 /* LaunchScreen.storyboard */; };
 		F5FD9BE620C525E1005CDE48 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD9BE520C525E1005CDE48 /* MainVC.swift */; };
 		F5FD9BE820C525F8005CDE48 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD9BE720C525F8005CDE48 /* MainView.swift */; };
-		F5FD9BEB20C5261E005CDE48 /* CirclePulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD9BE920C5261E005CDE48 /* CirclePulsing.swift */; };
-		F5FD9BEC20C5261E005CDE48 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FD9BEA20C5261E005CDE48 /* Pulsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F5062D9D20D0F4C40095BB18 /* CirclePulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CirclePulsing.swift; sourceTree = "<group>"; };
+		F5062D9F20D0F5180095BB18 /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		F54A274720CE7FA700B15F53 /* NormalVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalVC.swift; sourceTree = "<group>"; };
 		F54A274920CE841C00B15F53 /* InfinityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinityVC.swift; sourceTree = "<group>"; };
 		F54A274B20CE844A00B15F53 /* ExampleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleVC.swift; sourceTree = "<group>"; };
@@ -34,8 +36,6 @@
 		F5FD9BD720C5233C005CDE48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5FD9BE520C525E1005CDE48 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F5FD9BE720C525F8005CDE48 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		F5FD9BE920C5261E005CDE48 /* CirclePulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclePulsing.swift; sourceTree = "<group>"; };
-		F5FD9BEA20C5261E005CDE48 /* Pulsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +91,8 @@
 		F5FD9BE220C525C9005CDE48 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				F5FD9BE920C5261E005CDE48 /* CirclePulsing.swift */,
-				F5FD9BEA20C5261E005CDE48 /* Pulsing.swift */,
+				F5062D9D20D0F4C40095BB18 /* CirclePulsing.swift */,
+				F5062D9F20D0F5180095BB18 /* Pulsing.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -188,14 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5062D9E20D0F4C40095BB18 /* CirclePulsing.swift in Sources */,
 				F5FD9BCC20C5233C005CDE48 /* AppDelegate.swift in Sources */,
 				F54A274A20CE841C00B15F53 /* InfinityVC.swift in Sources */,
 				F54A274820CE7FA700B15F53 /* NormalVC.swift in Sources */,
 				F5FD9BE820C525F8005CDE48 /* MainView.swift in Sources */,
-				F5FD9BEC20C5261E005CDE48 /* Pulsing.swift in Sources */,
 				F54A274E20CFF4F700B15F53 /* ExampleView.swift in Sources */,
-				F5FD9BEB20C5261E005CDE48 /* CirclePulsing.swift in Sources */,
 				F5FD9BE620C525E1005CDE48 /* MainVC.swift in Sources */,
+				F5062DA020D0F5180095BB18 /* Pulsing.swift in Sources */,
 				F54A274C20CE844A00B15F53 /* ExampleVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
